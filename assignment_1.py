@@ -13,6 +13,7 @@
 
 ##Importing the matplotlib and numpy lib as plt and np respectively
 import matplotlib.pyplot as plt
+import matplotlib
 import numpy as np
 
 
@@ -25,16 +26,22 @@ sin = np.sin(period)
 # cosine graph
 cos = np.cos(period)
 
+# tangent graph
+tan = np.tan(period)
+
 #plotting sin and cosine on the same axis
-plt.plot(period,sin,period,cos)
+plt.plot(period,sin,period,cos,period,tan)
 
 ##creating legends
-plt.subplot().legend(['Sine','Cosine'])
+plt.subplot().legend(['Sine','Cosine','Tangent'])
 
 # Creating X and Y axes
 plt.subplot().axhline(y=0,color='k')
 plt.subplot().axvline(x=0,color='k')
 
+fig = plt.figure()
+
 # Displaying the plot
 plt.show()
 
+fig.savefig("SinCosTan.png")
