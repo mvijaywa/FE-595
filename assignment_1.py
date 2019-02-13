@@ -39,9 +39,9 @@ plt.subplot().legend(['Sine','Cosine','Tangent'])
 plt.subplot().axhline(y=0,color='k')
 plt.subplot().axvline(x=0,color='k')
 
-fig = plt.figure()
-
+#fig = plt.figure()
+plt.savefig("SinCosTan.png")
 # Displaying the plot
 plt.show()
 
-fig.savefig("SinCosTan.png")
+#plt.savefig("SinCosTan.png")
